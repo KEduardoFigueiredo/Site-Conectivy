@@ -1,4 +1,4 @@
-/* Estilos gerais */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,13 +21,14 @@ a {
     color: inherit;
 }
 .logo {
-    height: 80px; 
-    width: auto; 
-    margin-right: 10px;
-    
+    height: 300px; 
+    width: auto;
+    margin-right: 155px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-/* Estilo da Navbar */
+
 .navbar {
     background-color:  #111211;
     padding: 15px 20px;
@@ -35,8 +36,16 @@ a {
 
 .navbar .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 60px;
+    gap: 20px;
+}
+
+.logo {
+    height: 50px; 
+    width: auto; 
+    margin-right: 10px; 
 }
 
 
@@ -49,10 +58,11 @@ a {
 .nav-links {
     list-style: none;
     display: flex;
+    gap: 20px;
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 0;
 }
 
 .nav-links a {
@@ -65,9 +75,9 @@ a {
     color: #00f060;
 }
 
-/* Estilo da seção hero */
+
 #hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/fotos-gratis/modelo-de-close-up-com-sorriso-largo_23-2148846878.jpg?t=st=1730198003~exp=1730201603~hmac=d2094fcf88582d4e9344d2b190b07fa9edbc227356f9efdbf2c24123325c7ab6&w=1380') center/cover no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -107,7 +117,7 @@ a {
     background-color: #00f060;
 }
 
-/* Seção Criadores */
+
 #criadores {
     padding: 50px 20px;
     background-color: #1b1c1b;
@@ -136,7 +146,7 @@ a {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #00f060;
+    border: 2px solid #00f060;
 }
 
 .team-member h3 {
@@ -149,7 +159,7 @@ a {
     color: #ffffff;
 }
 
-/* Seção de Contato */
+
 #contato {
     padding: 50px 20px;
     background-color: #1b1c1b;
@@ -166,7 +176,7 @@ a {
     margin-bottom: 20px;
 }
 
-/* Footer */
+
 footer {
     background-color: #111211;
     color: white;
@@ -174,7 +184,7 @@ footer {
     padding: 10px 0;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     #hero h1 {
         font-size: 36px;
@@ -236,7 +246,7 @@ footer {
 }
 
 
-/* Seção Sobre */
+
 #sobre {
     padding: 50px 20px;
     background-color: #1b1c1b;
@@ -263,8 +273,8 @@ footer {
     padding: 20px;
     margin: 10px;
     flex: 1;
-    min-width: 250px; /* Ajusta o tamanho mínimo de cada item */
-    max-width: 300px; /* Ajusta o tamanho máximo de cada item */
+    min-width: 250px; 
+    max-width: 300px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
